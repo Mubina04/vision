@@ -6,6 +6,7 @@
     <title>Vision - Empowering the Blind</title>
     <link rel="shortcut icon" href="./assets/vision.png" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <header class="bg-indigo-300">
@@ -35,15 +36,22 @@
     <main>
       <!-- hero -->
       <section
-        class="hero container mx-auto flex  gap-10 justify-between items-center my-10 md:flex-nowrap sm:flex-wrap"
+        class="hero container mx-auto flex gap-10 justify-between items-center my-10 md:flex-nowrap sm:flex-wrap md:p-0 p-4"
       >
         <div class="hero__text">
-          <h1 class="text-6xl font-semibold">Seeing the World</h1>
-          <p class="text-2xl my-6 mb-16">
+          <h1 class="md:text-6xl sm:text-4xl font-semibold">
+            Seeing the World
+          </h1>
+          <p class="text-2xl md:my-6 my-3 md:mb-16 mb-8">
             Through Sound - Empowering the Visually Impaired
           </p>
           <a
-            class="bg-indigo-600 p-3 rounded-2xl text-white border border-indigo-600 border-2 duration-300 hover:shadow-2xl shadow-indigo-700 hover:bg-white hover:text-indigo-600 hover:font-semibold"
+            class="bg-indigo-600 md:p-3 p-1
+            rounded-2xl
+            text-white border
+            border-indigo-600 border-2 duration-300
+            hover:shadow-2xl shadow-indigo-700 hover:bg-white
+            hover:text-indigo-600 hover:font-semibold text-sm"
             href="#"
             >Try Vision Now</a
           >
@@ -52,16 +60,18 @@
           <img src="./assets/eye.svg" alt="app" />
         </div>
       </section>
-      <!-- features -->
-      <section id="features"></section>
+
       <!-- about us -->
-      <section id="about-us" class="about-us container mx-auto my-20">
+      <section
+        id="about-us"
+        class="about-us container mx-auto my-20 md:p-0 p-4"
+      >
         <h2 class="text-center font-semibold text-4xl text-indigo-900">
           Who we are?
         </h2>
-        <p class="my-6 w-2/3 mx-auto text-center text-lg">
+        <p class="my-6 md:w-2/3 w-full mx-auto text-center text-lg">
           At Vision, we believe that everyone deserves equal access to the world
-          around them. Our groundbreaking app is designed to empower visually
+          around them. Our groundbreaking app is designed to empower visuall y
           impaired individuals by providing them with the tools they need to
           navigate their surroundings, interact with the environment, and live
           life on their terms. With intuitive voice commands, real-time object
@@ -99,38 +109,82 @@
       </section> -->
       <section id="contacts" class="py-16 bg-white container mx-auto">
         <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-semibold text-gray-800 text-center mb-6">Interested in Purchasing Vision?</h2>
-            <p class="text-lg text-gray-600 text-center mb-8">Get in touch with our team to discuss pricing, licensing options, and more.</p>
+          <h2 class="text-3xl font-semibold text-gray-800 text-center mb-6">
+            Interested in Purchasing Vision?
+          </h2>
+          <p class="text-lg text-gray-600 text-center mb-8">
+            Get in touch with our team to discuss pricing, licensing options,
+            and more.
+          </p>
 
-            <!-- Contact Form -->
-            <form class="max-w-lg mx-auto" action="#" method="post">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                        <input type="text" name="name" id="name" autocomplete="name" class=" mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-2 border-indigo-300 rounded-md py-1">
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                        <input type="email" name="email" id="email" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-2 border-indigo-300 rounded-md py-1">
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                    <textarea id="message" name="message" rows="4" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-2 border-indigo-300 rounded-md"></textarea>
-                </div>
-                <div class="mt-4">
-                    <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Contact Us</button>
-                </div>
-            </form>
-
-            <!-- Additional Contact Information -->
-            <div class="mt-8 text-center">
-                <p class="text-gray-600">For alternative contact options:</p>
-                <p class="text-indigo-600 font-semibold">Email: salesvisionapp@gmail.com</p>
-                <p class="text-indigo-600 font-semibold">Phone: +998 (90) 624 80 09</p>
+          <!-- Contact Form -->
+          <form class="max-w-lg mx-auto" action="#" method="post">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  autocomplete="name"
+                  class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-2 border-indigo-300 rounded-md py-1"
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  autocomplete="email"
+                  class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-2 border-indigo-300 rounded-md py-1"
+                />
+              </div>
             </div>
+            <div class="mt-4">
+              <label
+                for="message"
+                class="block text-sm font-medium text-gray-700"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-2 border-indigo-300 rounded-md"
+              ></textarea>
+            </div>
+            <div class="mt-4">
+              <button
+                type="submit"
+                class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
+                Contact Us
+              </button>
+            </div>
+          </form>
+
+          <!-- Additional Contact Information -->
+          <div class="mt-8 text-center">
+            <p class="text-gray-600">For alternative contact options:</p>
+            <p class="text-indigo-600 font-semibold">
+              Email:
+             <a href="https://salesvisionapp@gmail.com">salesvisionapp@gmail.com</a>
+            </p>
+            <p class="text-indigo-600 font-semibold">
+              Phone: <a href="+998906248009">+998 (90) 624 80 09</a>
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
     </main>
   </body>
 </html>
